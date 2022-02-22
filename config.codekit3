@@ -63,6 +63,28 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/dev\/scss\/node_modules",
+      "oF" : 0
+    },
+    "\/dev\/scss\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/dev\/scss\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
