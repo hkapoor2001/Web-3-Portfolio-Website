@@ -172,17 +172,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/js\/innermenuAnimation.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/dev\/js\/innermenuAnimation-min.js",
-      "oF" : 1,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/dev\/js\/menuAnimation.js" : {
       "bF" : 0,
       "ft" : 64,
