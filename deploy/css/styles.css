@@ -1,0 +1,122 @@
+body {
+  overscroll-behavior: none;
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+body h1 {
+  margin-top: 0;
+}
+
+/* =============
+    Mixins
+============= */
+/* ---------------- Font Sizing ---------------- */
+html {
+  font-size: 100%;
+}
+
+/* ---------------- Media Queries ---------------- */
+#header-section {
+  width: 100vw;
+  position: fixed;
+  z-index: 3;
+  display: grid;
+  grid-template-areas: ". header .";
+  grid-template-columns: 3% 94% 3%;
+  margin-top: 2%;
+}
+#header-section #header-container {
+  width: 100%;
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "logo . buttons";
+  grid-template-columns: 50% 42% 8%;
+}
+#header-section #header-container #logo-container {
+  grid-area: logo;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+#header-section #header-container #logo-container #logo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 37px;
+}
+#header-section #header-container #logo-container #logo #logo-period {
+  color: #0029FF;
+}
+#header-section #header-container #logo-container #logo:hover {
+  color: #0029FF;
+}
+#header-section #header-container #button-container {
+  grid-area: buttons;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-container {
+  width: 80vw;
+  height: 90vh;
+  background-color: #0029FF;
+  border-radius: 0 3vh 0 0;
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 95.5% 3.5% 1%;
+  grid-template-areas: ". navbutton .";
+}
+#nav-container #nav-button-container {
+  grid-area: navbutton;
+  display: flex;
+  align-items: center;
+}
+#nav-container #inner-nav-container {
+  grid-template-columns: 95.5% 3.5% 1%;
+  grid-template-areas: ". exitnavbutton .";
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(to right, #2C2C2C, transparent 90%);
+  border-radius: 0 3vh 0 0;
+  z-index: 3;
+}
+#nav-container #inner-nav-container #exit-nav-button-container {
+  grid-area: exitnavbutton;
+  display: flex;
+  align-items: center;
+}
+
+#container {
+  width: 400%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+#container #div1 {
+  background-color: #f2f3f4;
+  width: 100vw;
+  height: 100vh;
+}
+#container #div2 {
+  background-color: blue;
+  width: 100vw;
+  height: 100vh;
+}
+#container #div3 {
+  background-color: green;
+  width: 100vw;
+  height: 100vh;
+}
+#container #div4 {
+  background-color: yellow;
+  width: 100vw;
+  height: 100vh;
+}
