@@ -1,34 +1,86 @@
 #container{
-    width: 400%;
+    width: 400vw;
     height: 100vh;
     display: flex;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
     flex-direction: row;
 
     .contentclass{
+        width: 100vw;
+        height: 100%;
+        z-index: 0;
+        position: relative;
     }
 
     #div1{
-        background-color: #f2f3f4;
+        background: linear-gradient(to bottom, #f2f3f4 82%, #5685FF );;
         width: 100vw;
-        height: 100vh;
+        // height: 100vh;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 18% 27% 59%;
+        grid-template-areas:  
+        ". hemani .";
+        #hemani{
+            grid-area: hemani;
+            margin-top: 53%;
+
+            #hemanisvg{
+                margin: 0%;
+                padding: 0%;
+            }
+            
+            #intro-line-1{
+                font-family: 'Open Sans', sans-serif;
+                color: black;
+                font-weight: 300;
+                font-size: 30px;
+                margin-top: 2%;
+                margin-bottom: 0%;
+                padding: 0%;
+            }
+
+            #intro-line-2{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 500;                ;
+                color: black;
+                font-size: 30px;
+                margin-top: 2vh;
+                margin-bottom: 0%;
+                padding: 0%;
+            }
+
+            #arrow-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 2vh;
+            }
+
+        }
+
+        
+
     }
 
     #div2{
         background-color: blue;
         width: 100vw;
-        height: 100vh;
+        // height: 100vh;
+        height: 100%;
     }
 
     #div3{
         background-color: green;
         width: 100vw;
-        height: 100vh;
+        // height: 100vh;
+        height: 100%;
     }
 
     #div4{
         background-color: yellow;
         width: 100vw;
-        height: 100vh;
+        // height: 100vh;
+        height: 100%;
     }
 }

@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {ScrollToPlugin} from "gsap/ScrollToPlugin";
 import { horizontalScroll } from "./horizontalScroll";
 import { aboutbuttonTL } from "./aboutbuttonrollover";
 import { contactbuttonTL } from "./contactbuttonrollover";
@@ -8,13 +9,14 @@ import { exitnavbuttonTL } from "./exitnavbuttonrollover";
 import { displayWindowSize } from "./windowSize.js";
 import { menuTL } from "./menuAnimation.js";
 
-gsap.registerPlugin(ScrollTrigger);
-
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 horizontalScroll();
 
-var burgerButton= document.querySelector("#nav-container")
-burgerButton.addEventListener("click", OpenCloseMenu)
+var menuButton= document.querySelector("#nav-button-container")
+menuButton.addEventListener("click", OpenCloseMenu)
+var exitmenuButton= document.querySelector("#exit-nav-button-container")
+exitmenuButton.addEventListener("click", OpenCloseMenu)
 
 let CanISeeMenu = false;
 function OpenCloseMenu(){
@@ -105,6 +107,20 @@ function ExitNavButtonRolloverLeave(){
         IsExitNavButtonRolloverActive = false;
     }
 }
+
+
+
+// Trying to get scrollto to work 
+
+var scroll1= document.querySelector("#nav-link-1")
+scroll1.addEventListener("click", scrollTo1)
+// let container = document.getElementById("container");
+
+function scrollTo1(){
+    gsap.to(window, {duration: 2, scrollTo: "#div3"});
+    console.log("scrolltoisactive");
+}
+
 
 window.addEventListener("resize", displayWindowSize )
 window.addEventListener("load", displayWindowSize )

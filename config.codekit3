@@ -31,6 +31,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/Arrow.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Arrow.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/contact button.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -46,6 +56,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/deploy\/img\/Exit-Triangle.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/hemani.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/hemani.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -202,6 +222,17 @@
       "oA" : 0,
       "oAP" : "\/deploy\/js\/scripts-min.js",
       "oF" : 3,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/scrollto.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/scrollto-min.js",
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -1001,7 +1032,7 @@
         "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {
